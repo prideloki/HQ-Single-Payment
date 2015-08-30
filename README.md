@@ -3,7 +3,7 @@
 ## How to install
 run this command 
 ```
-./composer install
+./composer.phar install
 ```
 ## How to run test
 ```
