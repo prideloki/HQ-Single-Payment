@@ -1,0 +1,136 @@
+[29-08-2015 09:08:03] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[29-08-2015 09:08:06] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[29-08-2015 09:08:06] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:08:08] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:08:08] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"},{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"88e863362ab2b"}
+[29-08-2015 09:08:39] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:08:42] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:08:42] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"},{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"9df7e0fa60735"}
+[29-08-2015 09:13:26] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:13:29] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:13:29] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"},{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"8b4bd7a6e2328"}
+[29-08-2015 09:15:28] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:15:30] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:15:30] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"},{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"387f401d3c7c2"}
+[29-08-2015 09:41:37] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:41:40] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:41:40] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"},{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"9f6d16218812b"}
+[29-08-2015 09:50:19] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:50:21] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[29-08-2015 09:50:21] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.expire_year","issue":"Must be numeric (YYYY)"},{"field":"payer.funding_instruments[0].credit_card.cvv2","issue":"Length is invalid (must be 3 or 4, depending on card type)"},{"field":"payer.funding_instruments[0].credit_card.expire_month","issue":"Value out of range (1-12)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"4051368ad9ee2"}
+[29-08-2015 09:52:10] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:52:15] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 09:52:38] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 09:52:41] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 10:02:36] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 10:02:40] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 01:28:40] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 01:28:42] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[29-08-2015 01:28:42] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"da22a8e645ebc"}
+[29-08-2015 02:51:25] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 02:51:27] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[29-08-2015 02:51:27] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"da7cdb1f1a04b"}
+[29-08-2015 03:29:55] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 03:30:01] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 04:04:19] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 04:04:21] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[29-08-2015 04:04:21] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"9676ccc42e11c"}
+[29-08-2015 04:15:49] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 04:15:53] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 04:24:27] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 04:24:30] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 04:24:51] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 04:24:57] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[29-08-2015 04:49:57] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 04:49:58] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[29-08-2015 04:49:58] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"6e5f07ddac318"}
+[29-08-2015 05:05:22] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[29-08-2015 05:05:26] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 01:10:48] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[30-08-2015 01:10:51] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[30-08-2015 01:10:51] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:10:53] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 01:10:53] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card","issue":"The credit card number is not valid for the specified credit card type"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"fb376ba95c84c"}
+[30-08-2015 01:12:07] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:12:09] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 01:12:09] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card","issue":"The credit card number is not valid for the specified credit card type"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"53525303beb18"}
+[30-08-2015 01:14:43] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:14:46] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 01:14:46] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card","issue":"The credit card number is not valid for the specified credit card type"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"ce064a34a1272"}
+[30-08-2015 01:35:29] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:35:32] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[30-08-2015 01:35:32] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"4f7827ca7827b"}
+[30-08-2015 01:36:03] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:36:04] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 500
+[30-08-2015 01:36:04] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 500 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"INTERNAL_SERVICE_ERROR","message":"An internal service error has occurred","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#INTERNAL_SERVICE_ERROR","debug_id":"900f9364278f4"}
+[30-08-2015 07:05:06] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 07:05:11] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 07:20:25] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 07:20:30] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 08:10:26] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 08:10:30] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 08:11:23] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 08:11:26] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 08:14:54] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 08:14:58] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 10:02:06] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[30-08-2015 10:02:12] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 200
+[30-08-2015 10:02:12] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:02:14] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:02:14] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.number","issue":"Must be numeric"},{"field":"payer.funding_instruments[0].credit_card.last_name","issue":"Must not be blank"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"d8854073d259f"}
+[30-08-2015 10:02:14] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:02:15] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:02:15] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.number","issue":"Must be numeric"},{"field":"payer.funding_instruments[0].credit_card.last_name","issue":"Must not be blank"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"b5bad55254d0f"}
+[30-08-2015 10:02:15] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:02:17] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:02:17] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.last_name","issue":"Must not be blank"},{"field":"payer.funding_instruments[0].credit_card.number","issue":"Must be numeric"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"9afb0255dd40e"}
+[30-08-2015 10:02:17] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:02:18] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:02:18] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card.last_name","issue":"Must not be blank"},{"field":"payer.funding_instruments[0].credit_card.number","issue":"Must be numeric"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"fee802551b1ba"}
+[30-08-2015 10:02:45] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:03:33] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:03:33] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"CREDIT_CARD_REFUSED","message":"Credit card was refused","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#CREDIT_CARD_REFUSED","debug_id":"29d9bca4ad82b"}
+[30-08-2015 10:04:33] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:04:48] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:04:48] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"CREDIT_CARD_REFUSED","message":"Credit card was refused","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#CREDIT_CARD_REFUSED","debug_id":"55c6daa3e30fc"}
+[30-08-2015 10:18:53] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:18:58] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 10:32:26] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:32:30] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 10:34:21] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:34:24] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 10:34:50] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:34:55] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 10:47:53] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:47:55] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:47:55] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card","issue":"The credit card number is not valid for the specified credit card type"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"c42d3ed02d803"}
+[30-08-2015 10:49:04] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:49:05] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 10:49:05] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"payer.funding_instruments[0].credit_card","issue":"The credit card number is not valid for the specified credit card type"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#VALIDATION_ERROR","debug_id":"5d16f56d63455"}
+[30-08-2015 10:59:31] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 10:59:35] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 11:11:36] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 11:11:46] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 11:17:06] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 11:17:10] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:53:14] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:53:21] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:54:01] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:54:04] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:54:31] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:54:34] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:54:45] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:54:48] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:55:04] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:55:07] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:55:35] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:55:38] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:56:58] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:57:01] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:57:39] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 12:57:43] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 12:59:58] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:00:01] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 201
+[30-08-2015 01:00:56] PayPal\Core\PayPalHttpConnection: INFO	: POST https://api.sandbox.paypal.com/v1/payments/payment
+[30-08-2015 01:01:37] PayPal\Core\PayPalHttpConnection: INFO	: Response Status 	: 400
+[30-08-2015 01:01:37] PayPal\Core\PayPalHttpConnection: ERROR	: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"CREDIT_CARD_REFUSED","message":"Credit card was refused","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#CREDIT_CARD_REFUSED","debug_id":"697dd5e3c2206"}

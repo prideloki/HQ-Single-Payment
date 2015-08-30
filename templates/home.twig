@@ -1,0 +1,191 @@
+{% extends 'master.twig' %}
+{% block header %}
+    Home
+{% endblock header %}
+{% block content %}
+    <style>
+        .error {
+            color: darkred;
+        }
+    </style>
+    <div class="col-md-12">
+
+        {% if flash.success is not empty %}
+            <div class="alert alert-success" role="alert">{{ flash.success }}</div>
+        {% endif %}
+        {% if flash.errors is not empty %}
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    {% for msg in flash.errors %}
+                        <li>{{ msg }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        <form id="checkout" method="post" action="/" class="form-horizontal">
+            <h3>Order</h3>
+            <fieldset>
+                <!-- Number input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="amount">Price (amount)</label>
+
+                    <div class="col-md-4">
+                        <input id="amount" name="amount" type="number" min="0" placeholder="0.00"
+                               class="form-control input-md" required>
+
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="currency">Currency</label>
+
+                    <div class="col-md-4">
+                        <select id="currency" name="currency" class="form-control">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="THB">THB</option>
+                            <option value="HKD">HKD</option>
+                            <option value="SGD">SGD</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="full-name">Full Name</label>
+
+                    <div class="col-md-4">
+                        <input id="full_name" name="full-name" type="text" placeholder="John Smith"
+                               class="form-control input-md" required>
+
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Payment</h3>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="card_holder_name">Card Holder Name</label>
+
+                    <div class="col-md-4">
+                        <input id="card_holder_name" name="card-holder-name" type="text" placeholder=""
+                               class="form-control input-md" required>
+
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="cc_number">Credit Card Number</label>
+
+                    <div class="col-md-4">
+                        <input id="cc_number" name="credit-card-number" type="text" placeholder=""
+                               class="form-control input-md" required>
+                    </div>
+                </div>
+                <!-- Number input-->
+                <div class="form-group">
+                    <label class="col-sm-4 col-md-4 control-label" for="expiration_date_month">Expiration Date</label>
+
+                    <div class="col-sm-4 col-md-2">
+                        <input id="expiration_date_month" name="expiration-date-month" type="number" placeholder="MM"
+                               class="form-control input-md" required>
+                    </div>
+                    <div class="col-sm-4 col-md-2">
+                        <input id="expiration_date_year" name="expiration-date-year" type="number" placeholder="YYYY"
+                               class="form-control input-md" required>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="ccv">CCV</label>
+
+                    <div class="col-md-2">
+                        <input id="ccv" name="ccv" type="text" placeholder="" class="form-control input-md" required>
+                    </div>
+                </div>
+
+                <input type="hidden" name="payment_method_nonce">
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="submit"></label>
+
+                    <div class="col-md-4">
+                        <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Pay">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+
+    </div>
+{% endblock content %}
+
+{% block script %}
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+
+    <script>
+
+        var clientToken = "{{ braintreeToken }}";
+
+
+
+        $(document).ready(function () {
+
+            $.validator.setDefaults({
+                success: "valid"
+            });
+            $('#checkout').validate({
+                rules: {
+                    amount: {
+                        required: true,
+                        number: true,
+                        min: 0
+                    },
+                    full_name: "required",
+                    card_holder_name: "required",
+                    cc_number: {
+                        required :true,
+                        creditcard: true
+                    },
+                    ccv: {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 4
+                    },
+                    expiration_date_month: {
+                        required: true,
+                        min: 1,
+                        max: 12
+                    }
+
+                }
+            });
+
+            {#http://stackoverflow.com/a/26692454/3133957#}
+            $('#checkout').on("submit", function () {
+
+
+                if ($("#checkout input[name=payment_method_nonce]").val() === '') {
+                    var client = new braintree.api.Client({clientToken: clientToken});
+                    client.tokenizeCard({
+                        number: $('#cc_number').val(),
+                        cardholderName: $('#card_holder_name').val(),
+                        expirationMonth: $('#expiration_date_month').val(),
+                        expirationYear: $('#expiration_date_year').val(),
+                        cvv: $('#ccv').val()
+                    }, function (err, nonce) {
+                        $("#checkout input[name=payment_method_nonce]").val(nonce);
+                        $('#submit').trigger('click');
+                    });
+                    return false;
+                } else {
+                    return true;
+                }
+            });
+        });
+
+    </script>
+
+{% endblock script %}
